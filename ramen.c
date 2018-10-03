@@ -2,7 +2,7 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
-;
+
 struct ramen {char type[256]; int intensity;};
 
 void print(struct ramen sample_ramen){
