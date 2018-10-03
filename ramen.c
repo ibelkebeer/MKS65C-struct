@@ -2,7 +2,7 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
-
+;
 struct ramen {char type[256]; int intensity;};
 
 void print(struct ramen sample_ramen){
@@ -24,4 +24,3 @@ void set_type(struct ramen * sample_ramen, char* name){
 void set_intensity(struct ramen * sample_ramen, int new_intensity){
   sample_ramen -> intensity = new_intensity;
 }
-

@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 #include "ramen.c"
-
+;
 int main(){
   struct ramen r1, r2, r3, r4;
   struct ramen ramens[] = {r1, r2, r3, r4};
