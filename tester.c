@@ -22,11 +22,11 @@ int main(){
 
   printf("==== Test Suite ====\n");
   print(chosen_ramen);
-  printf("Retrieving type only: %s\n", get_type(chosen_ramen));
+  printf("Retrieving type only: %s\n", get_type(ramen_pointer));
   printf("Original intensity for standard ramen: %d\n",get_intensity(chosen_ramen));
   set_intensity(ramen_pointer, 3);
   printf("New intensity for standard ramen: %d\n", get_intensity(chosen_ramen));
   set_type(ramen_pointer, types[rand() % 5]);
-  printf("Your ramen has evolved! Now it is of type %s!\n", get_type(chosen_ramen));
+  printf("Your ramen has evolved! Now it is of type %s!\n", get_type(ramen_pointer));
   return 0;
 }
