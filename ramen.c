@@ -1,19 +1,24 @@
 #include <stdio.h>
 #include <string.h>
-struct ramen{char type[256]; int intensity;};
 
-char* print(){
-  
+struct ramen {char type[256]; int intensity;};
+
+void print(struct ramen sample_ramen){
+  printf("Type of ramen: %s\nIntensity: %d\n", sample_ramen.type, sample_ramen.intensity);
 }
 
-int main(){
-  struct ramen standard;
-  strcpy(standard.type, "standard");
-  standard.intensity = 2;
-  struct ramen cheese; 
-  strcpy(cheese.type, "cheese");
-  cheese.intensity = 1;
-  struct ramen ramens[] = {standard, cheese}; 
-  printf("%s\n",ramens[0].type);
-  return 0;
+char* get_type(struct ramen sample_ramen){
+  return sample_ramen.type;
+}
+
+int get_intensity(struct ramen sample_ramen){
+  return sample_ramen.intensity;
+}
+
+void set_type(struct ramen * sample_ramen, char* name){
+  strcpy(sample_ramen -> type, name);
+}
+
+void set_intensity(struct ramen * sample_ramen, int new_intensity){
+  sample_ramen -> intensity = new_intensity;
 }
