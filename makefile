@@ -1,5 +1,7 @@
 all: tester.o ramen.o
 	gcc tester.o
+
+run: a.out
 	./a.out
 
 ramen.o: ramen.c
